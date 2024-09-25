@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Formulario Proyecto de practica" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">FORMULARIO</h1>
+            <p id="description" class="description text-center">Te agradecemos por tomarte el tiempo de completar este formulario</p>
+        </header>
+        <form id="survey-form" method="get" action="">
+            <label id="name-label">Nombre </label>
+            <input type="text" id="name" placeholder="Lorem Ipsum" class="form-control" required>
+            <label id="email-label">Email </label>
+            <input type="email" id="email" placeholder="ejemplo@gmail.com" class="form-control" required>
+            <label id="number-label">Edad </label>
+            <input type="number" id="number" min="18" max="99" placeholder="Debes ser mayor a 18 años" class="form-control" />
+            <label for="dropdown" class="">Estado Civil</label>
+            <select id="dropdown" name="dropdown" class="form-control">
+                <option value="">Selecciona una opción</option>
+                <option value="1">Soltero/a</option>
+                <option value="2">Casado/a</option>
+                <option value="3">Divorciado/a</option>
+                <option value="4">Viudo/a</option>
+            </select>
+            <fieldset class="checkbox-container">
+                <legend>Qué tipo de cuenta desea crear?</legend>
+                <label><input type="radio" name="account-type" value="radbut" class="input-radio" checked> Personal</label>
+                <label><input type="radio" name="account-type" value="radbut" class="input-radio" > Empresarial</label>
+            </fieldset>
+            <fieldset>
+                <legend>Cuál/es de los siguientes tópicos son de su interés?</legend>
+                <label><input type="checkbox" value="news-type" class="input-checkbox"> Política</label>
+                <label><input type="checkbox" value="news-type" class="input-checkbox"> Deportes</label>
+                <label><input type="checkbox" value="news-type" class="input-checkbox"> Economía y Finanzas</label>
+                <label><input type="checkbox" value="news-type" class="input-checkbox"> Cultura</label>
+                <label><input type="checkbox" value="news-type" class="input-checkbox"> Religión</label>
+                <label><input type="checkbox" value="news-type" class="input-checkbox"> Salud</label>
+                <label><input type="checkbox" value="news-type" class="input-checkbox"> Ciencia</label>
+                <label><input type="checkbox" value="news-type" class="input-checkbox"> Tecnología</label>
+            </fieldset>
+            <div class="text-paragraph"><p>Te quedaron preguntas?</p></div>
+            <textarea name="questions" placeholder="Escríbelas aquí..."></textarea>
+            <input type="submit" id="submit" class="submit-button" required>
+        </form>
+    </div>
+</body>
+</html>
